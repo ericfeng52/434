@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="profile.css">
+    <script src = "https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <ul class="title-bar">
+            <li><a href="../index.html">
+                <box-icon name='home'></box-icon>
+            </a></li>
+
+            <li><a href="inventory.html">
+                <box-icon name="fridge" class="main-icon"></box-icon>
+            </a></li>
+
+            <li><a href="shoppingList.html">
+                <box-icon name="shopping-bag" class="main-icon"></box-icon>
+            </a></li>
+           
+            <li><a href="recipes.html">
+                <box-icon name="food-menu" class="main-icon"></box-icon>
+            </a></li>
+
+            <li><a href="profile.html">
+                <box-icon name="user" class="main-icon"></box-icon>
+            </a></li>
+        </ul>
+    </nav>
+
+    <div class="content">
+        <h1 id="profile_header">View Profiles</h1>
+        <div id = "back">
+            <button id = "back-button">Back to Previous Page</button>
+        </div>
+        <div id="vp-content">
+            No Profiles to show yet...
+        </div>
+            
+    </div>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("back-button").onclick = function () {
+                location.href = "profile.html";
+            };
+            document.getElementById("create-button").onclick = function () {
+                location.href = "create_profile.html";
+            };
+        };
+    </script>
+</body>
+</html>
