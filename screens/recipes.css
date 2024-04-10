@@ -1,73 +1,121 @@
-.content {
-    font-size: large;
-    background-color: lightpink;
-    padding-bottom: 25px;
-    padding-left: 15px;
-    margin-top: 0rem;
-    padding-top: 0rem;
-}
-
-
-#todo_header {
-    text-align: left;
-    margin-top: 0;
-}
-
-.task {
-    display: flex;
-    align-items: center;
-    background-color: lightgrey;
-    width:fit-content
-}
-.task input[type="checkbox"] {
-    margin-right: 10px;
-}
-.task .delete-button {
-    font-weight:100;
-    margin-left: 25px;
-    cursor: pointer;
-}
-.task .delete-button:hover {
-    color: red;
-}
-.task.completed {
-    text-decoration: line-through;
-    background-color: darkgrey;
-}
 
 body {
-    margin: 0;
+    background-color: #eae2b7;
+    color: #003049;
     font-family: Arial, sans-serif;
+    text-align: center;
+    height: 100vh;
+    margin:0;
 }
 
-nav {
-    background-color: #333;
-    text-align: center;
-    margin: 0;
+
+.content {
+    font-size: large;
+    color: #fcbf49;
+    width: 640px;
+    background-color: #eae2b7;
+    overflow-y: auto;
+    height: calc(100vh - 50px);
 }
+
+.content button {
+    color: #fcbf49;
+}
+
+#header {
+    font-size:3rem;
+    background-color: white;
+    border-radius: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*Nav Bar Design*/
 
 .title-bar {
     list-style-type: none;
-    margin: 0;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center; /* Add this line to center the items */
+    background: white
 }
 
 .title-bar li {
     display: inline-block;
-    margin-right: 1rem;
-    margin-bottom: 0;
-    /*float: left;*/
+    height: 20px;
+    width: 20px;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
-.title-bar li a {
-    display: block;
-    color: white;
+.title-bar li:hover {
+    filter: brightness(50%)
+}
+
+/*Button Designs*/
+
+#buttons {
     text-align: center;
-    padding: 14px 16px;
-    margin-bottom: 0;
-    text-decoration: none;
 }
 
-.title-bar li a:hover {
-    background-color: #ddd;
-    color: black;
+.recipe-but {
+    background-color: white;
+    height:25vh;
+    width:80%;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 4rem;
+    word-wrap:break-word;
+    border-radius: 1rem;
+    border-color: #f77f00;
+    color:#fcbf49;
+    border-width: 1rem;
+    border-style: solid;
+    white-space:normal;
+}
+
+/*CSS for create-recipe*/
+
+#back-button{
+    background-color: white;
+    height: 10vh;
+    width: 79vw;
+    border-radius: 1rem;
+    border-color:#d62828;
+    border-style: solid;
+    border-width: 1rem;
+    font-size: 2rem;
+}
+
+#name-input, #ingredients-input, #instruction-input {
+    margin-top:0.5rem;
+    font-family: Arial, sans-serif;
+    height: 10vh;
+    width: 60vw;
+    font-size: 2rem;
+    text-align:center;
+}
+
+#instruction-input {
+    font-size: 1rem;
+    text-align:center;
+
+}
+#initial-div {
+    font-size:5rem;
+    color:#d62828;
+
+}
+
+#create-button {
+    height: 10vh;
+    width: 80vw;
+    font-size: 3rem;
+    background-color: white;
+    border-radius: 1rem;
 }
