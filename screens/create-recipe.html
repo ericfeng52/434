@@ -53,7 +53,10 @@
                 location.href = "recipes.html"
             }
             document.getElementById("create-button").onclick = function () {
-                alert("This feature has not been implemented yet, sorry.")
+                let nameinput = document.getElementById("name-input").value;
+                let ingredients = document.getElementById("ingredients-input").value;
+                let instructions = document.getElementById("instruction-input").value;
+                console.log(nameinput + ingredients + instructions);
             };
         };
     </script>
