@@ -35,20 +35,57 @@
 
     <div class="content">
         <h1 id="profile_header">Profile</h1>
-        <div class="profile">
-            <button id = "create-button">Create New Profile</button>
-            <!-- <img id = "profile-icon" src="profileicon.jpeg" alt= "profile-icon"> -->
-            <button id = "edit-button">Edit Current Profile</button>
-            <!-- <input id = "edit-button" type = "button" value = "Edit Current Profile"> -->
+        
+        <p>
+            <button id= "edit-button"><img src="edit2-icon.png"></button>
+        </p>
+        <p>
+            <button id = "save-button"><img src = "save-button.jpeg"></button>
+        </p>
+        
+            <form id = "create-form">
+                <span id = "Name">
+                    <p>
+                        <input id = "f-name" class = "text-box-small" type = "text" placeholder = "First Name" required>
+                    </p>
+                    <p>
+                        <input id = "l-name" class = "text-box-small" type = "text" placeholder = "Last Name" required>
+                    </p>
+                    <p>
+                        <input name="age" class = "text-box-small" type="number" step="5" min="0" max ="1000" value="1"> 
+                    </p>
+                    
+                </span>
+                <div id = "dropdown">
+                    <span>
+                        <input id = "recipe-button" type = "button" value = "Select Favorite Recipe">
+                        <input id = "selected-recipe" type = "text" placeholder = "Select Recipe" disabled>
+                    </span>
+                    <div id = "dropdown-items">
+                        
+                    </div>
+                             
+                </div>
+                    
+                <div>
+                    
+                </div>
+                
+            </form>
+            <!-- <button id = "create-button">Create New Profile</button> -->
+
+            
+            <!-- <button id = "edit-button">Edit Current Profile</button> -->
+           
             <div id = "bottom-area">
                 <button id = "social-button">View Other Profiles</button>
-                <!-- <input id = "social-button" type = "button" value = "View Other Profiles"> -->
+                
             </div>
         </div>
             
     </div>
     <script type="text/javascript">
-        window.onload = function() {
+        /*window.onload = function() {
             document.getElementById("social-button").onclick = function () {
                 location.href = "view-profile.html";
             };
@@ -58,7 +95,7 @@
             document.getElementById("create-button").onclick = function () {
                 location.href = "create_profile.html";
             };
-        };
+        };*/
     </script>
 </body>
 </html>
