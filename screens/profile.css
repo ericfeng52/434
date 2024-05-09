@@ -140,6 +140,9 @@ body {
 
 /*Form Design*/
 
+#buttons {
+    margin-left: 1.6rem;
+}
 
 #dropdown {
     text-align: center;
