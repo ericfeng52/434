@@ -119,6 +119,7 @@ body {
     background-color: white;
     height: 10vh;
     width:79vw;
+    margin-top: 1rem;
     text-align: center;
     font-size: 3rem;
     word-wrap:break-word;
@@ -140,11 +141,10 @@ body {
 /* For Create_Profile */
 
 /*Form Design*/
-#create-form div {
-    margin-top: 2rem;
-}
 
-#recipe-button {
+
+#dropdown {
+    text-align: center;
     background-color: #fcbf49;
     color: #003049;
     width: 35vw;
@@ -156,21 +156,14 @@ body {
     display: inline;
 }
 
+#container {
+    text-align: center; /* Align text content center */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
 
-#dropdown-items {
-    display: none;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-#dropdown-items a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
 .text-box-small {
+    margin-top: 1.5rem;
     height: 8vh;
     width: 35vw;
     font-size: 2rem;
@@ -204,7 +197,7 @@ body {
 }
 
 #selected-recipe {
-    margin-left: 8vw;
+
     background-color: white;
     color: #003049;
     width: 35vw;

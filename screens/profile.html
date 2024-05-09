@@ -36,40 +36,30 @@
     <div class="content">
         <h1 id="profile_header">Profile</h1>
         
-        <p>
+  
             <button id= "edit-button"><img src="edit2-icon.png"></button>
-        </p>
-        <p>
+       
             <button id = "save-button"><img src = "save-button.jpeg"></button>
-        </p>
+    
         
             <form id = "create-form">
-                <span id = "Name">
-                    <p>
-                        <input id = "f-name" class = "text-box-small" type = "text" placeholder = "First Name" required>
-                    </p>
-                    <p>
-                        <input id = "l-name" class = "text-box-small" type = "text" placeholder = "Last Name" required>
-                    </p>
-                    <p>
-                        <input name="age" class = "text-box-small" type="number" step="5" min="0" max ="1000" value="1"> 
-                    </p>
+                <div id = "container">
+
+                        <input id = "f-name" class = "text-box-small" type = "text" placeholder = "First Name"><br>
+                   
+                        <input id = "l-name" class = "text-box-small" type = "text" placeholder = "Last Name"><br>
                     
-                </span>
-                <div id = "dropdown">
-                    <span>
-                        <input id = "recipe-button" type = "button" value = "Select Favorite Recipe">
-                        <input id = "selected-recipe" type = "text" placeholder = "Select Recipe" disabled>
-                    </span>
-                    <div id = "dropdown-items">
-                        
-                    </div>
-                             
-                </div>
-                    
-                <div>
+                        <input class = "text-box-small" type="number" step="5" min="0" max ="1000" value="1"><br>
+                   
+                        <select id="dropdown">
+                            <option value="item1">Spaghetti and Meatballs</option>
+                            
+                        </select>
                     
                 </div>
+                
+                    
+            
                 
             </form>
             <!-- <button id = "create-button">Create New Profile</button> -->
@@ -85,10 +75,12 @@
             
     </div>
     <script type="text/javascript">
-        /*window.onload = function() {
+        window.onload = function() {
             document.getElementById("social-button").onclick = function () {
+                
                 location.href = "view-profile.html";
             };
+        }/*
             document.getElementById("edit-button").onclick = function () {
                 location.href = "edit-profile.html";
             };
