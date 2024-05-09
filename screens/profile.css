@@ -85,7 +85,6 @@ body {
 
 #save-button {
     margin-right:2rem;
-    float:right;
     background-color: white;
     height:13vh;
     width:20vw;
@@ -102,7 +101,6 @@ body {
 
 #edit-button {
     margin-right:2rem;
-    float:right;
     background-color: white;
     height:13vh;
     width:20vw;
@@ -153,13 +151,11 @@ body {
     border: none;
     white-space: normal;
     border-radius: 1rem;
-    display: inline;
+    margin-top: 1rem;
 }
 
 #container {
     text-align: center; /* Align text content center */
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
 }
 
 .text-box-small {
@@ -168,6 +164,7 @@ body {
     width: 35vw;
     font-size: 2rem;
     text-align: center;
+    
 }
 
 #submit-but {
