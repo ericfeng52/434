@@ -50,8 +50,13 @@
                    
                 <input id = "l-name" class = "text-box-small" type = "text" placeholder = "Last Name"><br>
                     
-                <input class = "text-box-small" type="number" step="5" min="0" max ="1000" value="1"><br>
+                <label id="slidelabel">Age: </label><br>
+                <input id = "slide" type="range" min="1" max="100" value="50" class="slider" id="myRange"><br>
+
+                <!-- <input class = "text-box-small" type="number" step="5" min="0" max ="1000" value="1"><br> -->
                    
+                <span id = "output"></span><br>
+
                 <select id="dropdown">
                     <option value="item1">Spaghetti and Meatballs</option>      
                 </select>         
@@ -76,6 +81,15 @@
                 
                 location.href = "view-profile.html";
             };
+        }
+        
+        var slider = document.getElementById("slide");
+        var output = document.getElementById("output");
+        output.innerHTML = slider.value; // Display the default slider value
+
+        // Update the current slider value (each time you drag the slider handle)
+        slider.oninput = function() {
+            output.innerHTML = this.value;
         }/*
             document.getElementById("edit-button").onclick = function () {
                 location.href = "edit-profile.html";
